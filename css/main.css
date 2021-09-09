@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+#about-me {
+  background: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 300px;
+  color: whitesmoke;
+  text-shadow: 0 0 4px black;
+}
+#about-me .profile-image {
+  width: 200px;
+  border: 0.4em solid whitesmoke;
+  border-radius: 2px;
+  transform: rotate(-2deg);
+  position: relative;
+  margin: 8px;
+  margin-right: 24px;
+  float: left;
+}
+#about-me .links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  column-gap: 2em;
+  row-gap: 1em;
+  align-items: center;
+}
+#about-me .links img {
+  width: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  #about-me .profile-image {
+    width: 30vw;
+    min-width: 150px;
+    float: none;
+  }
+  #about-me .links {
+    flex-direction: column;
+    float: right;
+  }
+  #about-me header {
+    clear: right;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
